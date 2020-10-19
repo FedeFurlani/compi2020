@@ -739,7 +739,7 @@ namespace at.jku.ssw.cc //Compilador //text_Box_Mio
             //tabControl1.Width -= 100;
             label1.Visible = label2.Visible = label8.Visible = label9.Visible = label10.Visible = label11.Visible = label12.Visible = label13.Visible = true;
             richTextBox2.Visible = richTextBox4.Visible = true;
-            tabControl1.SelectedIndex = 2;
+            Tokens.SelectedIndex = 2;
             tabControl2.Visible = false;
             button3.Visible = true;
             richTextBox8.Visible = richTextBox9.Visible = true;
@@ -1200,7 +1200,7 @@ namespace at.jku.ssw.cc //Compilador //text_Box_Mio
         {
             Parser.muestraProducciones = true;
             Parser.muestraCargaDeInstrs = Tab.muestraTabSimb = false;
-            tabControl1.SelectedIndex = 0;
+            Tokens.SelectedIndex = 0;
             treeView1.Nodes.Clear();
             inicializa();
             compilar();
@@ -1215,7 +1215,7 @@ namespace at.jku.ssw.cc //Compilador //text_Box_Mio
 
         private void tablaDeSímbolosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            tabControl1.SelectedIndex = 1;
+            Tokens.SelectedIndex = 1;
 
             inicializa();
             Parser.muestraProducciones = Parser.muestraCargaDeInstrs = false;
@@ -1228,7 +1228,7 @@ namespace at.jku.ssw.cc //Compilador //text_Box_Mio
         {
             Parser.muestraProducciones = Tab.muestraTabSimb = false;
             Parser.muestraCargaDeInstrs = true;
-            tabControl1.SelectedIndex = 2;
+            Tokens.SelectedIndex = 2;
             inicializa();
 
             compilar();
@@ -1236,10 +1236,10 @@ namespace at.jku.ssw.cc //Compilador //text_Box_Mio
 
         private void maquVirtualToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            tabControl1.Width -= 100;
+            Tokens.Width -= 100;
             label1.Visible = label2.Visible = label8.Visible = label9.Visible = label10.Visible = label11.Visible = label12.Visible = true;
             richTextBox2.Visible = richTextBox4.Visible = true;
-            tabControl1.SelectedIndex = 2;
+            Tokens.SelectedIndex = 2;
             tabControl2.Visible = false;
             richTextBox8.Visible = richTextBox9.Visible = true;
             maquVirtual();
@@ -1425,6 +1425,16 @@ namespace at.jku.ssw.cc //Compilador //text_Box_Mio
             
             pr.StartInfo.FileName = "z_gramatica.txt";
             pr.Start();
+        }
+
+        private void treeView2_AfterSelect(object sender, TreeViewEventArgs e)
+        {
+
+        }
+
+        private void tabControl1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
 
         private void acercaToolStripMenuItem_Click(object sender, EventArgs e)

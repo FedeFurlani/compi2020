@@ -42,6 +42,7 @@ namespace at.jku.ssw.cc
 
                 }
             }
+            Program1.form1.arbolTokens.Nodes.Add("Token");
             Program1.form1.richTextBox2.Text = pilaString;
             if (Parser.muestraCargaDeInstrs) Parser.MessageBoxCon2PregMaqVirtual();
         }
@@ -194,6 +195,7 @@ namespace at.jku.ssw.cc
         public static Token token;    // last recognized token
         public static Token laToken;  // lookahead token (not yet recognized)
         static int la;         // shortcut to kind attribute of lookahead token (laToken.kind)
+        static bool btoken= false;
 
         /* Symbol table object of currently compiled method. */
         internal static Symbol curMethod;
@@ -206,8 +208,17 @@ namespace at.jku.ssw.cc
         {
             token = laToken;
             laToken = Scanner.Next();
+            if (btoken)
+            {
+                Program1.form1.arbolTokens.Nodes.Add("Token " + token.str);
+            }
+            else
+            {
+                btoken = true;
+            }
             //La 1° vez q se ejecuta, token queda con Token(1, 1), laToken con "class" (primer token del programa)
             la = laToken.kind;
+
         }
 
         /* Verifies symbol and reads ahead. */

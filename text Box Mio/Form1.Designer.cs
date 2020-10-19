@@ -30,7 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             this.richTextBox2 = new System.Windows.Forms.RichTextBox();
-            this.richTextBox3 = new System.Windows.Forms.RichTextBox();
             this.richTextBox4 = new System.Windows.Forms.RichTextBox();
             this.richTextBox5 = new System.Windows.Forms.RichTextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -91,14 +90,6 @@
             this.bUParsingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.compilerGeneratorsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.autoresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.pag1 = new System.Windows.Forms.TabPage();
-            this.treeView1 = new System.Windows.Forms.TreeView();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.arbolTS = new System.Windows.Forms.TreeView();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
             this.tabControl2 = new System.Windows.Forms.TabControl();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.pestania = new System.Windows.Forms.TabControl();
@@ -107,15 +98,27 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.richTextBox3 = new System.Windows.Forms.RichTextBox();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.arbolTS = new System.Windows.Forms.TreeView();
+            this.pag1 = new System.Windows.Forms.TabPage();
+            this.treeView1 = new System.Windows.Forms.TreeView();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.Tokens = new System.Windows.Forms.TabControl();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.arbolTokens = new System.Windows.Forms.TreeView();
             this.menuStrip1.SuspendLayout();
-            this.tabControl1.SuspendLayout();
-            this.pag1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.tabPage1.SuspendLayout();
-            this.tabPage2.SuspendLayout();
             this.tabControl2.SuspendLayout();
             this.tabPage4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.tabPage2.SuspendLayout();
+            this.tabPage1.SuspendLayout();
+            this.pag1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.Tokens.SuspendLayout();
+            this.tabPage3.SuspendLayout();
             this.SuspendLayout();
             // 
             // richTextBox2
@@ -131,20 +134,6 @@
             this.richTextBox2.Text = "";
             this.richTextBox2.Visible = false;
             this.richTextBox2.TextChanged += new System.EventHandler(this.richTextBox2_TextChanged);
-            // 
-            // richTextBox3
-            // 
-            this.richTextBox3.BackColor = System.Drawing.Color.White;
-            this.richTextBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.richTextBox3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.richTextBox3.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.richTextBox3.Location = new System.Drawing.Point(3, 3);
-            this.richTextBox3.Name = "richTextBox3";
-            this.richTextBox3.ReadOnly = true;
-            this.richTextBox3.Size = new System.Drawing.Size(522, 541);
-            this.richTextBox3.TabIndex = 15;
-            this.richTextBox3.Text = "";
-            this.richTextBox3.TextChanged += new System.EventHandler(this.richTextBox3_TextChanged);
             // 
             // richTextBox4
             // 
@@ -578,70 +567,70 @@
             this.bUParsingToolStripMenuItem,
             this.compilerGeneratorsToolStripMenuItem});
             this.pPTToolStripMenuItem.Name = "pPTToolStripMenuItem";
-            this.pPTToolStripMenuItem.Size = new System.Drawing.Size(40, 20);
+            this.pPTToolStripMenuItem.Size = new System.Drawing.Size(39, 20);
             this.pPTToolStripMenuItem.Text = "PPT";
             this.pPTToolStripMenuItem.Click += new System.EventHandler(this.pPTToolStripMenuItem_Click);
             // 
             // introducciónToolStripMenuItem
             // 
             this.introducciónToolStripMenuItem.Name = "introducciónToolStripMenuItem";
-            this.introducciónToolStripMenuItem.Size = new System.Drawing.Size(217, 22);
+            this.introducciónToolStripMenuItem.Size = new System.Drawing.Size(216, 22);
             this.introducciónToolStripMenuItem.Text = "Introducción";
             this.introducciónToolStripMenuItem.Click += new System.EventHandler(this.introducciónToolStripMenuItem_Click);
             // 
             // overviewppsxToolStripMenuItem
             // 
             this.overviewppsxToolStripMenuItem.Name = "overviewppsxToolStripMenuItem";
-            this.overviewppsxToolStripMenuItem.Size = new System.Drawing.Size(217, 22);
+            this.overviewppsxToolStripMenuItem.Size = new System.Drawing.Size(216, 22);
             this.overviewppsxToolStripMenuItem.Text = "Overview";
             this.overviewppsxToolStripMenuItem.Click += new System.EventHandler(this.overviewppsxToolStripMenuItem_Click);
             // 
             // scanningToolStripMenuItem
             // 
             this.scanningToolStripMenuItem.Name = "scanningToolStripMenuItem";
-            this.scanningToolStripMenuItem.Size = new System.Drawing.Size(217, 22);
+            this.scanningToolStripMenuItem.Size = new System.Drawing.Size(216, 22);
             this.scanningToolStripMenuItem.Text = "Scanning";
             this.scanningToolStripMenuItem.Click += new System.EventHandler(this.scanningToolStripMenuItem_Click);
             // 
             // parsingToolStripMenuItem
             // 
             this.parsingToolStripMenuItem.Name = "parsingToolStripMenuItem";
-            this.parsingToolStripMenuItem.Size = new System.Drawing.Size(217, 22);
+            this.parsingToolStripMenuItem.Size = new System.Drawing.Size(216, 22);
             this.parsingToolStripMenuItem.Text = "Parsing";
             this.parsingToolStripMenuItem.Click += new System.EventHandler(this.parsingToolStripMenuItem_Click);
             // 
             // semanticProcessingToolStripMenuItem
             // 
             this.semanticProcessingToolStripMenuItem.Name = "semanticProcessingToolStripMenuItem";
-            this.semanticProcessingToolStripMenuItem.Size = new System.Drawing.Size(217, 22);
+            this.semanticProcessingToolStripMenuItem.Size = new System.Drawing.Size(216, 22);
             this.semanticProcessingToolStripMenuItem.Text = "SemanticProcessing";
             this.semanticProcessingToolStripMenuItem.Click += new System.EventHandler(this.semanticProcessingToolStripMenuItem_Click);
             // 
             // symbolTableParaImprimirToolStripMenuItem
             // 
             this.symbolTableParaImprimirToolStripMenuItem.Name = "symbolTableParaImprimirToolStripMenuItem";
-            this.symbolTableParaImprimirToolStripMenuItem.Size = new System.Drawing.Size(217, 22);
+            this.symbolTableParaImprimirToolStripMenuItem.Size = new System.Drawing.Size(216, 22);
             this.symbolTableParaImprimirToolStripMenuItem.Text = "SymbolTable para Imprimir";
             this.symbolTableParaImprimirToolStripMenuItem.Click += new System.EventHandler(this.symbolTableParaImprimirToolStripMenuItem_Click);
             // 
             // codeGenerationToolStripMenuItem
             // 
             this.codeGenerationToolStripMenuItem.Name = "codeGenerationToolStripMenuItem";
-            this.codeGenerationToolStripMenuItem.Size = new System.Drawing.Size(217, 22);
+            this.codeGenerationToolStripMenuItem.Size = new System.Drawing.Size(216, 22);
             this.codeGenerationToolStripMenuItem.Text = "CodeGeneration";
             this.codeGenerationToolStripMenuItem.Click += new System.EventHandler(this.codeGenerationToolStripMenuItem_Click);
             // 
             // bUParsingToolStripMenuItem
             // 
             this.bUParsingToolStripMenuItem.Name = "bUParsingToolStripMenuItem";
-            this.bUParsingToolStripMenuItem.Size = new System.Drawing.Size(217, 22);
+            this.bUParsingToolStripMenuItem.Size = new System.Drawing.Size(216, 22);
             this.bUParsingToolStripMenuItem.Text = "BU-Parsing";
             this.bUParsingToolStripMenuItem.Click += new System.EventHandler(this.bUParsingToolStripMenuItem_Click);
             // 
             // compilerGeneratorsToolStripMenuItem
             // 
             this.compilerGeneratorsToolStripMenuItem.Name = "compilerGeneratorsToolStripMenuItem";
-            this.compilerGeneratorsToolStripMenuItem.Size = new System.Drawing.Size(217, 22);
+            this.compilerGeneratorsToolStripMenuItem.Size = new System.Drawing.Size(216, 22);
             this.compilerGeneratorsToolStripMenuItem.Text = "CompilerGenerators";
             this.compilerGeneratorsToolStripMenuItem.Click += new System.EventHandler(this.compilerGeneratorsToolStripMenuItem_Click);
             // 
@@ -651,88 +640,6 @@
             this.autoresToolStripMenuItem.Size = new System.Drawing.Size(60, 20);
             this.autoresToolStripMenuItem.Text = "Autores";
             this.autoresToolStripMenuItem.Click += new System.EventHandler(this.autoresToolStripMenuItem_Click);
-            // 
-            // tabControl1
-            // 
-            this.tabControl1.Controls.Add(this.pag1);
-            this.tabControl1.Controls.Add(this.tabPage1);
-            this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Location = new System.Drawing.Point(490, 31);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(536, 596);
-            this.tabControl1.TabIndex = 38;
-            // 
-            // pag1
-            // 
-            this.pag1.Controls.Add(this.treeView1);
-            this.pag1.Controls.Add(this.richTextBox1);
-            this.pag1.Controls.Add(this.pictureBox1);
-            this.pag1.Location = new System.Drawing.Point(4, 24);
-            this.pag1.Name = "pag1";
-            this.pag1.Padding = new System.Windows.Forms.Padding(3);
-            this.pag1.Size = new System.Drawing.Size(528, 568);
-            this.pag1.TabIndex = 0;
-            this.pag1.Text = "Grámatica -Arbol";
-            this.pag1.UseVisualStyleBackColor = true;
-            // 
-            // treeView1
-            // 
-            this.treeView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.treeView1.FullRowSelect = true;
-            this.treeView1.Location = new System.Drawing.Point(3, 3);
-            this.treeView1.Name = "treeView1";
-            this.treeView1.Size = new System.Drawing.Size(522, 562);
-            this.treeView1.TabIndex = 0;
-            this.treeView1.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.treeView1_AfterSelect);
-            // 
-            // richTextBox1
-            // 
-            this.richTextBox1.BackColor = System.Drawing.SystemColors.Menu;
-            this.richTextBox1.Location = new System.Drawing.Point(0, 0);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(528, 547);
-            this.richTextBox1.TabIndex = 43;
-            this.richTextBox1.Text = "";
-            this.richTextBox1.Visible = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(-128, 309);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(278, 122);
-            this.pictureBox1.TabIndex = 41;
-            this.pictureBox1.TabStop = false;
-            // 
-            // tabPage1
-            // 
-            this.tabPage1.Controls.Add(this.arbolTS);
-            this.tabPage1.Location = new System.Drawing.Point(4, 24);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(528, 547);
-            this.tabPage1.TabIndex = 2;
-            this.tabPage1.Text = "Tabla de Símbolos ";
-            this.tabPage1.UseVisualStyleBackColor = true;
-            // 
-            // arbolTS
-            // 
-            this.arbolTS.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.arbolTS.Location = new System.Drawing.Point(3, 3);
-            this.arbolTS.Name = "arbolTS";
-            this.arbolTS.Size = new System.Drawing.Size(522, 541);
-            this.arbolTS.TabIndex = 0;
-            // 
-            // tabPage2
-            // 
-            this.tabPage2.Controls.Add(this.richTextBox3);
-            this.tabPage2.Location = new System.Drawing.Point(4, 24);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(528, 547);
-            this.tabPage2.TabIndex = 3;
-            this.tabPage2.Text = "Instr CIL (RT 3)";
-            this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // tabControl2
             // 
@@ -820,6 +727,123 @@
             this.pictureBox2.TabStop = false;
             this.pictureBox2.Visible = false;
             // 
+            // tabPage2
+            // 
+            this.tabPage2.Controls.Add(this.richTextBox3);
+            this.tabPage2.Location = new System.Drawing.Point(4, 24);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(528, 568);
+            this.tabPage2.TabIndex = 3;
+            this.tabPage2.Text = "Instr CIL (RT 3)";
+            this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // richTextBox3
+            // 
+            this.richTextBox3.BackColor = System.Drawing.Color.White;
+            this.richTextBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.richTextBox3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.richTextBox3.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.richTextBox3.Location = new System.Drawing.Point(3, 3);
+            this.richTextBox3.Name = "richTextBox3";
+            this.richTextBox3.ReadOnly = true;
+            this.richTextBox3.Size = new System.Drawing.Size(522, 562);
+            this.richTextBox3.TabIndex = 15;
+            this.richTextBox3.Text = "";
+            this.richTextBox3.TextChanged += new System.EventHandler(this.richTextBox3_TextChanged);
+            // 
+            // tabPage1
+            // 
+            this.tabPage1.Controls.Add(this.arbolTS);
+            this.tabPage1.Location = new System.Drawing.Point(4, 24);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(528, 568);
+            this.tabPage1.TabIndex = 2;
+            this.tabPage1.Text = "Tabla de Símbolos ";
+            this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // arbolTS
+            // 
+            this.arbolTS.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.arbolTS.Location = new System.Drawing.Point(3, 3);
+            this.arbolTS.Name = "arbolTS";
+            this.arbolTS.Size = new System.Drawing.Size(522, 562);
+            this.arbolTS.TabIndex = 0;
+            // 
+            // pag1
+            // 
+            this.pag1.Controls.Add(this.treeView1);
+            this.pag1.Controls.Add(this.richTextBox1);
+            this.pag1.Controls.Add(this.pictureBox1);
+            this.pag1.Location = new System.Drawing.Point(4, 24);
+            this.pag1.Name = "pag1";
+            this.pag1.Padding = new System.Windows.Forms.Padding(3);
+            this.pag1.Size = new System.Drawing.Size(528, 568);
+            this.pag1.TabIndex = 0;
+            this.pag1.Text = "Grámatica -Arbol";
+            this.pag1.UseVisualStyleBackColor = true;
+            // 
+            // treeView1
+            // 
+            this.treeView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.treeView1.FullRowSelect = true;
+            this.treeView1.Location = new System.Drawing.Point(3, 3);
+            this.treeView1.Name = "treeView1";
+            this.treeView1.Size = new System.Drawing.Size(522, 562);
+            this.treeView1.TabIndex = 0;
+            this.treeView1.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.treeView1_AfterSelect);
+            // 
+            // richTextBox1
+            // 
+            this.richTextBox1.BackColor = System.Drawing.SystemColors.Menu;
+            this.richTextBox1.Location = new System.Drawing.Point(0, 0);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(528, 547);
+            this.richTextBox1.TabIndex = 43;
+            this.richTextBox1.Text = "";
+            this.richTextBox1.Visible = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(-128, 309);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(278, 122);
+            this.pictureBox1.TabIndex = 41;
+            this.pictureBox1.TabStop = false;
+            // 
+            // Tokens
+            // 
+            this.Tokens.Controls.Add(this.pag1);
+            this.Tokens.Controls.Add(this.tabPage1);
+            this.Tokens.Controls.Add(this.tabPage2);
+            this.Tokens.Controls.Add(this.tabPage3);
+            this.Tokens.Location = new System.Drawing.Point(490, 31);
+            this.Tokens.Name = "Tokens";
+            this.Tokens.SelectedIndex = 0;
+            this.Tokens.Size = new System.Drawing.Size(536, 596);
+            this.Tokens.TabIndex = 38;
+            this.Tokens.SelectedIndexChanged += new System.EventHandler(this.tabControl1_SelectedIndexChanged);
+            // 
+            // tabPage3
+            // 
+            this.tabPage3.Controls.Add(this.arbolTokens);
+            this.tabPage3.Location = new System.Drawing.Point(4, 24);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(528, 568);
+            this.tabPage3.TabIndex = 4;
+            this.tabPage3.Text = "Tokens";
+            this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // arbolTokens
+            // 
+            this.arbolTokens.Location = new System.Drawing.Point(22, 26);
+            this.arbolTokens.Name = "arbolTokens";
+            this.arbolTokens.Size = new System.Drawing.Size(413, 247);
+            this.arbolTokens.TabIndex = 0;
+            this.arbolTokens.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.treeView2_AfterSelect);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -829,7 +853,7 @@
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pestania);
             this.Controls.Add(this.richTextBox9);
-            this.Controls.Add(this.tabControl1);
+            this.Controls.Add(this.Tokens);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.tabControl2);
             this.Controls.Add(this.label12);
@@ -858,14 +882,15 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            this.tabControl1.ResumeLayout(false);
-            this.pag1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.tabPage1.ResumeLayout(false);
-            this.tabPage2.ResumeLayout(false);
             this.tabControl2.ResumeLayout(false);
             this.tabPage4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.tabPage2.ResumeLayout(false);
+            this.tabPage1.ResumeLayout(false);
+            this.pag1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.Tokens.ResumeLayout(false);
+            this.tabPage3.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -874,7 +899,6 @@
         #endregion
 
         public System.Windows.Forms.RichTextBox richTextBox2;
-        public System.Windows.Forms.RichTextBox richTextBox3;
         public System.Windows.Forms.RichTextBox richTextBox4;
         public System.Windows.Forms.RichTextBox richTextBox5;
         private System.Windows.Forms.Label label1;
@@ -917,11 +941,6 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator4;
         private System.Windows.Forms.ToolStripMenuItem ayudaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ayudaToolStripMenuItem1;
-        private System.Windows.Forms.TabControl tabControl1;
-        private System.Windows.Forms.TabPage pag1;
-        public System.Windows.Forms.TreeView treeView1;
-        private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.TabControl tabControl2;
         private System.Windows.Forms.TabPage tabPage4;
         private System.Windows.Forms.ToolStripMenuItem inspeccionarToolStripMenuItem;
@@ -930,7 +949,6 @@
         private System.Windows.Forms.ToolStripMenuItem instruccionesToolStripMenuItem;
         private System.Windows.Forms.TabControl pestania;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
-        public System.Windows.Forms.TreeView arbolTS;
         private System.Windows.Forms.Button button4;
         public System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
@@ -944,12 +962,21 @@
         private System.Windows.Forms.ToolStripMenuItem codeGenerationToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem bUParsingToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem compilerGeneratorsToolStripMenuItem;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.ToolStripMenuItem autoresToolStripMenuItem;
-        private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.ToolStripMenuItem introducciónToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem acercaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem gramaticaToolStripMenuItem;
+        private System.Windows.Forms.TabPage tabPage2;
+        public System.Windows.Forms.RichTextBox richTextBox3;
+        private System.Windows.Forms.TabPage tabPage1;
+        public System.Windows.Forms.TreeView arbolTS;
+        private System.Windows.Forms.TabPage pag1;
+        public System.Windows.Forms.TreeView treeView1;
+        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.TabControl Tokens;
+        private System.Windows.Forms.TabPage tabPage3;
+        public System.Windows.Forms.TreeView arbolTokens; //creacion de vble arbol - importante crear como publico.
     }
 }

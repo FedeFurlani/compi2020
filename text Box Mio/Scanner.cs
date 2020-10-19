@@ -77,6 +77,7 @@ public class Scanner {
         Token t = new Token(line, col);
         //if ('A' <= ch && 'z' >= ch) System.Console.WriteLine(ch + " es letra ");
         //if ('0' <= ch && '9' >= ch) System.Console.WriteLine(ch + " es nro ");
+        if ((ch >= 'a' && ch <= 'z') || (ch >= 'A' && ch <= 'Z') || ch == '_') //es Letra
                 ReadName(t); 
         //V1
         //SI LO Q VIENE ES UN NOMBRE, LO TOMA COMO NOMBRE (LAS VARABLES NO PUEDEN EMPEZAR CON UN NUMERO)
@@ -354,6 +355,7 @@ public class Scanner {
     static void ReadName(Token t)
     {
             
+               while ((('0' <= ch && '9' >= ch || ch == '_') || (ch >= 'a' && ch <= 'z') || (ch >= 'A' && ch <= 'Z') || ch == '_' ))
                 //V1 -> LAS VBLES TIENEN Q EMPEZAR CON LETRAS PERO DESPUES PUEDEN TENER GUINES BAJOS
         {
             t.str = t.str+ch;

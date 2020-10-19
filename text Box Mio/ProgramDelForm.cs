@@ -8,8 +8,9 @@ namespace at.jku.ssw.cc //Compilador//text_Box_Mio
 {
     public static class Program1
     {
+        /////CLASE PRINCIPAL/////
         //static int ii = 11;
-        public static Form1 form1; 
+        public static Form1 form1; //CARGA 
         /// <summary>
         /// Punto de entrada principal para la aplicación.
         /// </summary>
