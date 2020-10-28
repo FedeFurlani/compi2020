@@ -206,6 +206,15 @@ namespace at.jku.ssw.cc
         /* Reads ahead one symbol. */
         static void Scan()
         {
+            //Mejora Token
+            token = laToken;
+            laToken = Scanner.Next();
+            System.Windows.Forms.TreeNode node = Program1.form1.arbolTokens.Nodes.Insert(0, "Token " + token.str + ", token kind" + token.kind);
+            node.Expand();
+            node.Nodes.Insert(0, "la Token: " + laToken.str + ", latoken kind " + laToken.kind);
+            la = laToken.kind;
+            //La 1° vez q se ejecuta, token queda con Token(1, 1), laToken con "class" (primer token del programa)
+            /*la = laToken.kind;
             token = laToken;
             laToken = Scanner.Next();
             if (btoken)
@@ -218,6 +227,7 @@ namespace at.jku.ssw.cc
             }
             //La 1° vez q se ejecuta, token queda con Token(1, 1), laToken con "class" (primer token del programa)
             la = laToken.kind;
+            */
 
         }
 
